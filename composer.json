@@ -14,25 +14,37 @@
     },
     "minimum-stability": "stable",
     "repositories": [
+		{
+            "type": "vcs",
+            "url": "https://github.com/sinanfb/portal-site.git"
+        },
+	
+	
         {
             "type": "vcs",
             "url": "https://github.com/kouosl/portal-base.git"
         },
-        {
+		
+		{
             "type": "vcs",
-            "url": "https://github.com/kouosl/portal-theme.git"
+            "url": "https://github.com/nejdetsarikaya3802/portal-login.git"
+        },
+		 {
+            "type": "vcs",
+            "url": "https://github.com/sinanfb/portal-ozgecmis.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/kouosl/portal-site.git"
+            "url": "https://github.com/sinanfb/portal-theme.git"
+        },
+        
+        {
+            "type": "vcs",
+            "url": "https://github.com/sinanfb/portal-user.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/kouosl/portal-user.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/kouosl/portal-menu.git"
+            "url": "https://github.com/sinanfb/portal-menu.git"
         },
         {
             "type": "vcs",
@@ -49,11 +61,14 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "kouosl/portal-base": "dev-develop",
+        "kouosl/portal-ozgecmis": "dev-develop",
+        "kouosl/portal-content": "dev-develop",
         "kouosl/portal-theme": "dev-develop",
-        "kouosl/portal-site": "dev-develop",
+        "kouosl/portal-login": "dev-develop",
         "kouosl/portal-user": "dev-develop",
-        "kouosl/portal-menu": "dev-develop",
-        "kouosl/portal-content": "dev-develop"
+        "kouosl/portal-site": "dev-develop",
+        "kouosl/portal-menu": "dev-develop"
+        
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

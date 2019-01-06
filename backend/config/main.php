@@ -22,13 +22,19 @@ return [
         'user' => [
             'class' => 'kouosl\user\Module'   // here is our v1 modules
         ],
-        'sample' => [
-            'class' => 'kouosl\sample\Module'   // here is our v1 modules
+        'content' => [
+            'class' => 'kouosl\content\Module'   // here is our v1 modules
+        ],
+		'ozgecmis' => [
+            'class' => 'kouosl\ozgecmis\Module'   // here is our v1 modules
         ]
 
     ],
     'components' => [
-        'request' => [
+			'authManager' => [
+		 'class' => 'yii\rbac\DbManager',
+		 ],
+				'request' => [
             'csrfParam' => '_csrf-backend',
 			'class' => 'kouosl\base\components\Request',
 			'web'=> '/backend/web',

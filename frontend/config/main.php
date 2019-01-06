@@ -22,11 +22,17 @@ return [
         'user' => [
             'class' => 'kouosl\user\Module'   // here is our v1 modules
         ],
-        'sample' => [
-            'class' => 'kouosl\sample\Module'   // here is our v1 modules
+        'content' => [
+            'class' => 'kouosl\content\Module'   // here is our v1 modules
         ],
+		'ozgecmis' => [
+            'class' => 'kouosl\ozgecmis\Module'   // here is our v1 modules
+        ]
     ],
     'components' => [
+	'authManager' => [
+ 'class' => 'yii\rbac\DbManager',
+ ],
         'request' => [
 			// !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'Ws_5fvKwQV0EaWpFgpgU0x7aK5BsKfPY',
